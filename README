@@ -1,0 +1,27 @@
+Hello,
+
+First of all, the page does not look like the ones you had provided, apologies for that. Special apology for the logo :-)
+
+I was unable to open the photoshop psd file, hence had to rely on the only image I had.
+
+I did not have any icons/images provided there, hence have used my own.
+
+Also, I admit the page is not fully responsive, again apologies, probably I highly depend on Bootstrap for a responsive layout and creating them solely by hand was a challenge.
+
+I hope I am able to furnish all the functionalities provided in the test. Again, I would have made a much better solution with Angular JS.
+
+The page can be navigated by the bottom hand navigation bar. For obvious reasons, all data are mocked on HTML and respective divs are shown/hidden based on nav click.
+
+Each page should show one different item.
+
+Add to basket adds the item to cart. You can add one item multiple times.
+
+The number of items in cart should show how many items are currently in cart.
+
+The total to pay = cart value + £10 shipping charge
+
+You can add items to favourites by clicking on the favorites icon. One item can be added to favorites only once.
+
+The number of items in favourites should show on the header.
+
+
