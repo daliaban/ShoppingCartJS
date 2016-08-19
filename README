@@ -14,6 +14,8 @@ The page can be navigated by the bottom hand navigation bar. For obvious reasons
 
 Each page should show one different item.
 
+The User's location is captured using a third party service which checks users IP address to determine which country they belong to and shows that under 'Your Location'.
+
 Add to basket adds the item to cart. You can add one item multiple times.
 
 The number of items in cart should show how many items are currently in cart.
@@ -24,4 +26,7 @@ You can add items to favourites by clicking on the favorites icon. One item can 
 
 The number of items in favourites should show on the header.
 
+Items can be deleted from both Cart and favorites.
+
+The cart items and favorites are saved in session storage, hence can be retrieved on page refresh.
 
