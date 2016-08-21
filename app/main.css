@@ -1,0 +1,355 @@
+html, body {
+    height: 100%;
+    background-image: url('images/main_background.jpg');
+}
+
+* {
+    box-sizing: border-box;
+}
+.maincontainer {
+    position: relative;
+    height: 100%;
+    width:100%;
+}
+
+.container {
+    background-image: url('images/container_background.jpg');
+    height: 60%;
+    width: 100%;
+}
+
+header {
+    background-color:black;
+    height: 12%;
+    padding: 2px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid dodgerblue;
+    text-align: center;
+}
+
+.logo {
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 6px;
+}
+
+.cartLink {
+    background-image: url('images/shopping-cart.png');
+    background-repeat: no-repeat;
+    padding-left:25px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.favLink {
+    background-image: url('images/favorite-3.png');
+    background-repeat: no-repeat;
+    padding-left:25px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.hflinks.cart {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.hflinks.favourite {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#cart {
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#favorites {
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#cartL {
+    border: 1px solid;
+    padding: 2px 5px;
+    border-color: ghostwhite;
+    border-radius: 50%;
+    color: ghostwhite;
+}
+
+#favL {
+     border: 1px solid;
+     padding: 2px 5px;
+     border-color: ghostwhite;
+     border-radius: 50%;
+     color: ghostwhite;
+ }
+
+#total {
+    margin-left: 5px;
+    font-weight: bold;
+    color: ghostwhite;
+}
+
+
+#main {
+    height: 100%;
+    width: 99%;
+}
+
+.mains {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position:absolute;
+    text-align: left;
+    font-size: 12px;
+    height: 25%;
+}
+
+#footerList {
+    background-color: black;
+    padding-top: 20px;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#footerList li.footerContent {
+    display: inline-block;
+    width: 18%;
+    padding-bottom: 15px;
+}
+
+#footerList li.footerContent a{
+    color: gray;
+    text-decoration: none;
+}
+
+#footerList li.footerContent a:active{
+    color: white;
+}
+
+#footerList li.footerContent.active {
+    border-bottom: 2px solid dodgerblue;
+}
+
+.topFooter {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    margin: 10px 0;
+    padding-top: 20px;
+}
+
+.row {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col6 {
+    width: 50%;
+}
+
+.col9 {
+    width: 75%;
+}
+
+.col3 {
+    width: 25%;
+}
+
+.col3, .col6, .col9 {
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+.foofav {
+    font-size: 300%;
+}
+
+.totalToPay h3 {
+    margin: 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+.table>tbody>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.mainImg {
+    padding:0;
+    margin:0;
+    height: 100%;
+
+}
+.mainImg img {
+    width:100%;
+    height: 100%;
+}
+
+.productinfo {
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.price {
+    width: 25%;
+}
+    
+
+button.addCart, button.deleteCart, button.deleteFav {
+    color: #fff;
+    background-color: dodgerblue;
+    padding: 10px 25px;
+    font-size: 10px;
+    border: 1px solid dodgerblue;
+    border-radius: 4px;
+}
+
+.location {
+    margin: 25px 0;
+    font-size: .75em;
+}
+
+.availability {
+    color: gray;
+    font-size: .70em;
+}
+
+.description{
+    margin: 25px 0;
+    font-size: .75em;
+}
+
+.rating {
+    font-size: .75em;
+}
+
+.small {
+    font-size: .75em;
+}
+
+.productheading{
+    font-size: 1.5em;
+    margin-top:20px;
+}
+
+@media all and (max-width: 650px){
+    .col {
+        width: 100%;
+    }
+    
+    .logo {
+        padding-left: 30px;
+    }
+    
+    .productinfo {
+        padding: 0;
+        overflow-y: scroll;
+    }
+    
+    .small {
+        font-size: .5em;
+    }
+
+    .productheading{
+        font-size: 1em;
+        margin-top:10px;
+    }
+    
+    .location {
+        margin: 5px 0;
+        font-size: .5em;
+    }
+
+    .availability {
+        color: gray;
+        font-size: .45em;
+    }
+    
+    .description{
+        margin: 5px 0;
+        font-size: .5em;
+    }
+    
+    .rating {
+        font-size: .5em;
+    }
+    
+    button.addCart, button.deleteCart, button.deleteFav {
+        color: #fff;
+        background-color: dodgerblue;
+        padding: 5px 15px;
+        font-size: 5px;
+        border: 1px solid dodgerblue;
+        border-radius: 4px;
+    }
+    
+    .paymentimages img {
+        width: 80%;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .hflinks.cart {
+        text-align: left;
+        padding-top: 10px;
+        font-size: .75em;
+    }
+
+    .hflinks.favourite {
+        padding-top: 10px;
+        font-size: .75em;
+    }
+    
+    .table>thead:first-child>tr:first-child>th {
+        font-size: .75em; 
+    }
+    .table>tbody>tr>td {
+        padding: 0;
+        font-size: .75em;
+    }
+}
+

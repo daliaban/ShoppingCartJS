@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Shopping Site</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <header>
+            <div class="row">
+                <div class="col6">
+                    <div class="logo">
+                        <img src="images/mister-wong-logo.png" alt="logo image">
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="hflinks cart">
+                        <a href="#" class="cartLink"><span id="cartL"></span></a>
+                        <span id="total" class="pull-right"></span>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="hflinks favourite">
+                        <a href="#" class="favLink"><span id="favL"></span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div id="main" class="show">
+                <div id="main1" class="mains show">
+                    <div class="col6">
+                        <div class="mainImg">
+                            <img src="images/mangoes.jpg" alt="main image">
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="productinfo">
+                            <div class="small">
+                                <span>LOREM</span>
+                                <span class="pull-right">Product Id: <span class="pid">123456</span></span>
+                            </div>
+                            <div class="productheading">
+                                <button class="pull-right addCart">ADD TO BASKET</button>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="price">
+                                <span class="unitprice pull-right">£20.99</span>
+                                <span style="text-decoration:line-through;color: red;">£50.99</span>
+                            </div>
+                            <span style="font-size:10px; color: gray;">RRP: £57.990 (Lorem Ipsum 30%)</span>
+                            <div class="location">
+                                Your Location: <span class="userlocation"></span>&nbsp;&nbsp;<a href="javascript:void(0)">Change</a>
+                            </div>
+                            <div class="availability">
+                                In stock. More than 20 available online. Order in the next 10 mins for next day delivery.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetue adipisicing.
+                                <ul>
+                                    <li>Brand: Yellow tropical</li>
+                                    <li>Model: #51222583</li>
+                                    <li>Material: Juicy flesh</li>
+                                    <li>Dimensions model: Big roundish</li>
+                                </ul>
+                            </div>
+                            <div class="rating">
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/mark.png"></span>
+                                <span><img src="images/mark.png"></span>&nbsp;&nbsp;
+                                <span>3.0/5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:underline;">65 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main2" class="mains hide">
+                    <div class="col6">
+                        <div class="mainImg">
+                            <img src="images/kiwi.jpg" alt="main image">
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="productinfo">
+                            <div class="small">
+                                <span>LOREM</span>
+                                <span class="pull-right">Product Id: <span class="pid">789456</span></span>
+                            </div>
+                            <div class="productheading">
+                                <button class="pull-right addCart">ADD TO BASKET</button>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="price">
+                                <span class="unitprice pull-right">£12.99</span>
+                                <span style="text-decoration:line-through;color: red;">£20.99</span>
+                            </div>
+                            <span style="font-size:10px; color: gray;">RRP: £27.990 (Lorem Ipsum 20%)</span>
+                            <div class="location">
+                                Your Location: <span class="userlocation"></span>&nbsp;&nbsp;<a href="javascript:void(0)">Change</a>
+                            </div>
+                            <div class="availability">
+                                In stock. More than 50 available online. Order in the next 10 mins for next day delivery.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetue adipisicing.
+                                <ul>
+                                    <li>Brand: Kiwi Citrus Fruit</li>
+                                    <li>Model: #54989583</li>
+                                    <li>Material: Green Pulp</li>
+                                    <li>Dimensions model: Bell</li>
+                                </ul>
+                            </div>
+                            <div class="rating">
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/interface.png"></span>
+                                <span><img src="images/mark.png"></span>
+                                <span><img src="images/mark.png"></span>&nbsp;&nbsp;
+                                <span>2.5/5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:underline;">112 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main3" class="mains hide">
+                    <div class="col6">
+                        <div class="mainImg">
+                            <img src="images/orange.jpg" alt="main image">
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="productinfo">
+                            <div class="small">
+                                <span>LOREM</span>
+                                <span class="pull-right">Product Id: <span class="pid">456123</span></span>
+                            </div>
+                            <div class="productheading">
+                                <button class="pull-right addCart">ADD TO BASKET</button>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="price">
+                                <span class="unitprice pull-right">£30.99</span>
+                                <span style="text-decoration:line-through;color: red;">£90.99</span>
+                            </div>
+                            <span style="font-size:10px; color: gray;">RRP: £100.990 (Lorem Ipsum 30%)</span>
+                            <div class="location">
+                                Your Location: <span class="userlocation"></span>&nbsp;&nbsp;<a href="javascript:void(0)">Change</a>
+                            </div>
+                            <div class="availability">
+                                In stock. More than 60 available online. Order in the next 10 mins for next day delivery.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetue adipisicing.
+                                <ul>
+                                    <li>Brand: Orange Citrus fruit</li>
+                                    <li>Model: #54011183</li>
+                                    <li>Material: Orange pulps</li>
+                                    <li>Dimensions model: Round</li>
+                                </ul>
+                            </div>
+                            <div class="rating">
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/interface.png"></span>
+                                <span><img src="images/mark.png"></span>&nbsp;&nbsp;
+                                <span>4.5/5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:underline;">48 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main4" class="mains hide">
+                    <div class="col6">
+                        <div class="mainImg">
+                            <img src="images/strawberry.jpg" alt="main image">
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="productinfo">
+                            <div class="small">
+                                <span>LOREM</span>
+                                <span class="pull-right">Product Id: <span class="pid">098765</span></span>
+                            </div>
+                            <div class="productheading">
+                                <button class="pull-right addCart">ADD TO BASKET</button>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="price">
+                                <span class="unitprice pull-right">£52.99</span>
+                                <span style="text-decoration:line-through;color: red;">£100.99</span>
+                            </div>
+                            <span style="font-size:10px; color: gray;">RRP: £27.990 (Lorem Ipsum 20%)</span>
+                            <div class="location">
+                                Your Location: <span class="userlocation"></span>&nbsp;&nbsp;<a href="javascript:void(0)">Change</a>
+                            </div>
+                            <div class="availability">
+                                In stock. More than 30 available online. Order in the next 10 mins for next day delivery.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetue adipisicing.
+                                <ul>
+                                    <li>Brand: Red sweet sour fruit</li>
+                                    <li>Model: #54890093</li>
+                                    <li>Material: Fleshy</li>
+                                    <li>Dimensions model: small</li>
+                                </ul>
+                            </div>
+                            <div class="rating">
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/interface.png"></span>
+                                <span><img src="images/mark.png"></span>
+                                <span><img src="images/mark.png"></span>&nbsp;&nbsp;
+                                <span>3.5/5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:underline;">225 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main5" class="mains hide">
+                    <div class="col6">
+                        <div class="mainImg">
+                            <img src="images/pommegranate.jpg" alt="main image">
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <div class="productinfo">
+                            <div class="small">
+                                <span>LOREM</span>
+                                <span class="pull-right">Product Id: <span class="pid">123789</span></span>
+                            </div>
+                            <div class="productheading">
+                                <button class="pull-right addCart">ADD TO BASKET</button>
+                                <span>Lorem Ipsum</span>
+                            </div>
+                            <div class="price">
+                                <span class="unitprice pull-right">£25.59</span>
+                                <span style="text-decoration:line-through;color: red;">£200.99</span>
+                            </div>
+                            <span style="font-size:10px; color: gray;">RRP: £270.990 (Lorem Ipsum 90%)</span>
+                            <div class="location">
+                                Your Location:<span class="userlocation"></span>&nbsp;&nbsp;<a href="javascript:void(0)">Change</a>
+                            </div>
+                            <div class="availability">
+                                In stock. More than 50 available online. Order in the next 10 mins for next day delivery.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetue adipisicing.
+                                <ul>
+                                    <li>Brand: red buttons</li>
+                                    <li>Model: #541112383</li>
+                                    <li>Material: Seed within</li>
+                                    <li>Dimensions model: Big Round</li>
+                                </ul>
+                            </div>
+                            <div class="rating">
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/favorite.png"></span>
+                                <span><img src="images/mark.png"></span>&nbsp;&nbsp;
+                                <span>4.0/5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-decoration:underline;">156 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="cart" class="hide">
+               <div>
+                   <h3>Items in Cart</h3>
+                   <table id="cartTable" class="table">
+                   </table>
+               </div>
+               <span>Shipping Charges: £10</span><br/><br/>
+               <a href="#" class="mainLink">Continue Shopping</a>
+            </div>
+            <div id="favorites" class="hide">
+                <div>
+                    <h3>Your favorites</h3>
+                    <table id="favTable" class="table">
+                    </table>
+                </div>
+                <a href="#" class="mainLink">Continue Shopping</a>
+            </div>
+        </div>
+        <footer>
+            <div id="maintopfooter" class="topFooter show">
+                <div class="col3">
+                    <a href="#" class="addFav"><img src="images/favorite-1.png" alt="add to favorite"></a>
+                </div>
+                <div class="col3">
+                    <div class="notify"><img src="images/sound.png" alt="notify me"></div>
+                </div>
+                <div class="col3">
+                    <div class="hflinks">
+                        <span>Total To Pay</span>
+                        <div>
+                            <span class="totalToPay"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="hflinks">
+                        <span>Payment option</span>
+                        <div class="paymentimages">
+                            <img src="http://i76.imgup.net/accepted_c22e0.png" alt="payment options">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="resttopfooter" class="topFooter hide">
+                <div class="col6">
+                    <div class="hflinks">
+                        <span>Total To Pay</span>
+                        <div>
+                            <span class="totalToPay"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col6">
+                    <div class="hflinks">
+                        <span>Payment option</span>
+                        <div class="paymentimages">
+                            <img src="http://i76.imgup.net/accepted_c22e0.png" alt="payment options">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul id="footerList">
+                <li id="list1" class="footerContent active"><a href="#">Lorem Ipsum</a></li>
+                <li id="list2" class="footerContent"><a href="#">Lorem Ipsum</a></li>
+                <li id="list3" class="footerContent"><a href="#">Lorem Ipsum</a></li>
+                <li id="list4" class="footerContent"><a href="#">Lorem Ipsum</a></li>
+                <li id="list5" class="footerContent"><a href="#">Lorem Ipsum</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
