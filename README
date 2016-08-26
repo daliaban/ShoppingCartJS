@@ -1,10 +1,6 @@
+This Shopping Cart is done without using any framework / libraries except jQuery and plain javascript.
 
-I was unable to open the photoshop psd file, hence had to rely on the only image I had and
-because no other image was provided for all 5 screens, I had chosen to use random images of fruits.
-
-I hope I am able to furnish all the functionalities provided in the test. Without any frameworks/libraries, it was a good challenge.
-
-The page can be navigated by the bottom hand navigation bar. For obvious reasons, all data are mocked on HTML and respective divs are shown/hidden based on nav click.
+The page can be navigated by the bottom hand navigation bar. All data are mocked on HTML and respective divs are shown/hidden based on nav click.
 
 Each page should show one different item.
 
